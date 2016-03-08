@@ -27,12 +27,11 @@ mylist.append("Cora")
 print mylist
 
 # Voila! Our list has now grown from four names to five
-
-You can also change one of the names based on their index position, which we dealt with above. 
+# You can also change one of the names based on their index position, which we dealt with above. 
 
 print mylist[3]
 
-By using the index, we can change the value
+# By using the index, we can change the value
 
 mylist[3] = "Colleen"
 
@@ -51,7 +50,7 @@ list2 = ["George", "Tony"]
 print mylist + list2
 
 
-#The same concepts work by using variables instead of a raw value
+#The same concepts work by using variables instead of raw values
 
 newname = "Tom"
 
@@ -85,13 +84,35 @@ print catlist
 # Probably the most powerful (and potentially dangerous) thing to do with a list is to iterate over it using a for loop, 
 # to perform some action on each item in the list.
 
-for item in mylist:
-    print item * 5
+# Let's start with a list of numbers
+# note that numbers don't have quotes (") around them
 
+numlist = [1,2,3,4,5]
+print numlist
 
+# Now let's use a FOR LOOP to pull out each individual item in our list. 
+# An important, though someone confusing aspect, is that the name you give to the "items" can be virtually anything.
+# Below we've called it "item" but we could just as easily have called it "apple" or "elephant".
+# It's best though to make it descriptive of what you're seeking so you can remember what it is you've done.
 
+for item in numlist:
+    print item 
 
-# For the final item, let's use the length of the list and lowercase the two strings we created to create a sentence
-print 'I made %d strings from a list I created. They are: %s & %s' % (len(my_split_string), my_split_string[0].lower(), my_split_string[1].lower())
+# Now watch this -- instead of just returning each individual number, let's
+# do some math on each one. 
+# Multiply each number on our list by 5 and give us the result.
 
+for item in numlist:
+    print item*5 
 
+#The same concepts work for strings/text as well
+
+teamlist = ["Cowboys", "Giants", "Patriots"]
+
+for team in teamlist:    
+    print team
+
+# Now let's add on something truthful about these teams 
+
+for team in teamlist:    
+    print team + " Stink!"
