@@ -25,9 +25,10 @@ print "Welcome to " + mystring
 
 mystring.upper()
 
-# You might notice that the .upper() method doesn't permanently change the "variable" variable. We'll get to that in a minute.
+# You might notice that the .upper() method doesn't permanently change the "variable" variable. 
+# We'll get to that in a minute.
 
-mystring
+print mystring
 
 # You can also capitalize the first letter in the string
 print my_string.capitalize()
@@ -44,7 +45,7 @@ print "DENVER".lower()
 type(mystring)
 
 
-#Slicing and dicing your string
+#SLICING AND DICING STRINGS
 
 # You can use the brackets to 'slice' out characters from a string based on their position. 
 # Notice in Python, that we start counting at zero. So variable[0] returns the "n" in "nicar". 
@@ -54,12 +55,15 @@ type(mystring)
 "DENVER"[0:2]
 
 #Using a variable of course works the same way
+
 mystring[0:2]
 
 # Let's print the first four characters
+
 print my_string[:4]
 
 # Let's print everything after the second character
+
 print my_string[2:]
 
 # Remember when the .upper() method didn't change the variable? A string is immutable. 
@@ -84,8 +88,8 @@ newmystring = mystring.replace("ni","py")
 
 newmystring1=newmystring.upper()
 
-newmystring
-newmystring1
+print newmystring
+print newmystring1
 
 # Let's add the year to our string "pycar"
 
@@ -95,30 +99,33 @@ ourclass = newmystring + 16
 
 ourclass = newmystring + "16"
 
+print ourclass
+
 
 #You can also use a function called SPLIT to split a string based on a certain character
 
 mylongstring = "Denver, Colorado"
 
-
 # Let's try to split the string on the space
+
 print mylongstring.split(',')
 
 # Let's create a variable to hold this string
+
 mysplitstring = mylongstring.split(',')
 
-mysplitstring
+print mysplitstring
 
 # Then let's get the type
+
 print type(my_split_string)
 
 # A list? Hmm. That's a new one.
 # Because it's a list, we can again get a specfic item by it's index and we're back to where we started
 
 my_split_string[0]
-print my_split_string[0]
 
-my_split_string[1]
+print my_split_string[0]
 
 #Wait, what IS a "list"???  
 #Ask, and ye shall have an answer in the next step...
