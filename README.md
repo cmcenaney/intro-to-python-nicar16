@@ -11,7 +11,7 @@
 - Setup
 - Who are we?
 - What is Python?
-- Why Python?
+- Why learn Python?
 
 #### Part 1: The Basics (45 - 60 min)
 - Explain the language's components
