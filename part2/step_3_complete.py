@@ -1,4 +1,4 @@
-# Import modules
+3# Import modules
 import csv
 
 # Write a function to do some exploring with strings
@@ -14,20 +14,20 @@ def working_with_strings(file_name):
     header_row = csv_data.next()
 
     # From the last lesson we know the variable header_row refers to a list.
-    # Let's isolate the string that is 'Acquiring Institution'
+    # Let's isolate the string that is 'GROSS SALES'
     print header_row
 
     # We'll do this by isolating in the list what is know as the index of the string
-    print header_row[4]
+    print header_row[3]
 
     # Let's make sure this is a string
-    print type(header_row[4])
+    print type(header_row[3])
 
     # Let's get the length of the string
-    print len(header_row[4])
+    print len(header_row[3])
 
     # Create a variable to hold our string
-    my_string = header_row[4]
+    my_string = header_row[3]
 
     # Let's see how string subscripting works...
     # Let's print the third character
