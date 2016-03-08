@@ -40,6 +40,16 @@ mylist[3] = "Colleen"
 
 print mylist
 
+# You can also delete items from a list using the DEL command
+
+del mylist[2]
+
+# It's also possible to combine lists together or replicate them
+
+list2 = ["George", "Tony"]
+
+print mylist + list2
+
 
 #The same concepts work by using variables instead of a raw value
 
@@ -50,8 +60,27 @@ mylist.append(newname)
 print mylist
 
 
+# PROMPTING USERS TO ENTER VALUES
+# You can also prompt users to enter a value that you assign to a variable, 
+# then use it to make lists
+# (note: this code should be run in the command line)
+
+print('Enter the name of cat 1: ')
+catName1 = raw_input()
+print('Enter the name of cat 2: ')
+catName2 = raw_input()
+
+print('The cat names are: ')
+print(catName1 + ' ' + catName2)
+
+#Now we'll use the two user-defined values to create a list
+catlist = [catName1, catName2]
+print "Here's my new list: "
+print catlist
 
 
+
+#FOR LOOPS
 
 # Probably the most powerful (and potentially dangerous) thing to do with a list is to iterate over it using a for loop, 
 # to perform some action on each item in the list.
