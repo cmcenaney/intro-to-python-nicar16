@@ -7,20 +7,20 @@
 
 ### Schedule for the session
 
-#### Introduction
+#### Introduction (~20 min)
 - Setup
 - Who are we?
 - What is Python?
 - Why learn Python?
 
-#### Part 1: The Basics (45 - 60 min)
+#### Part 1: The Basics (~50 min)
 - Explain the language's components
 	- integers
 	- strings
 	- lists
 	- if/else statements
 
-#### Part 2: Functions and Files (45 - 60 min)
+#### Part 2: Functions and Files (~50 min)
 - I/O operations
 - working with csv files
 - manipulating types
