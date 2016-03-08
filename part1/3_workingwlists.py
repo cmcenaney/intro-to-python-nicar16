@@ -3,7 +3,6 @@
 # One of our favorite Python types is the list. 
 # A list is an ordered collection of objects (variables, strings, integers, other lists, and more) 
 # and is mutable. You create a list by assigning wrapping it in brackets and assigning it to a variable. 
-# If you're familiar with JavaScript or Ruby, a Python list is very similar to an array.
 
 mylist = ["Bob", "Sue", "Jim", "Renee"]
 
@@ -11,15 +10,15 @@ mylist
 
 print mylist
 
-# Because a list is a sequence (just as a string is a sequence of characters), we can also use the slicing method to pull out specific items from the list.
+# Because a list is a sequence (just as a string is a sequence of characters), we can also use 
+# the slicing method to pull out specific items from the list.
 
 mylist[0:1]
 
 mylist[3]
 
 
-# A list can be CHANGED - with values added or swapped out 
-
+# A list can also be CHANGED - with values added or swapped out 
 # You add items to a list using the append() function
 
 mylist.append("Cora")
@@ -62,7 +61,7 @@ print mylist
 # PROMPTING USERS TO ENTER VALUES
 # You can also prompt users to enter a value that you assign to a variable, 
 # then use it to make lists
-# (note: this code should be run in the command line)
+# (note: this code should be run as a .py file via the command line)
 
 print('Enter the name of cat 1: ')
 catName1 = raw_input()
