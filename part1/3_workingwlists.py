@@ -105,7 +105,29 @@ for item in numlist:
 for item in numlist:
     print item*5 
 
-#The same concepts work for strings/text as well
+# There are certain Python functions that create lists for you of certain types.
+# For example, here is how you can easily make a list of sequential numbers based
+# on their range.
+
+range(10)
+print range(10)
+
+# You don't have to start with zero - you can set any two values to find numbers between them
+
+range(22,45)
+print range(22,45)
+
+# If we want to save our list to actually use, we'll want to assign to a variable
+
+myrange = range(22,45)
+print myrange
+
+# Now let's use a loop to print out each number in our range, which is a list
+
+for item in myrange:
+	print item
+
+#The same concepts of LOOPS work for strings/text as well
 
 teamlist = ["Cowboys", "Giants", "Patriots"]
 
