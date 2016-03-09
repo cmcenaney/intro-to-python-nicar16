@@ -15,27 +15,24 @@
 
     # From the last lesson we know the variable header_row refers to a list.
     # Let's isolate the string that is 'GROSS_SALES'
-
+    
 
     # Create a variable to hold our string
-  
+    
 
     # Let's evaluate the uppercase version is equal to the lowercase version
     
 
-    # Let's remove the space that is present in the string
+    # Let's remove the underscore that is present in the string
     
 
-    # Let's change the space to an underscore
-
+    # Let's change the underscore to an space
+    
 
     # Let's look at the strip method by giving it a value
-
-
-    # Let's look at what the strip method does to the ouput of above
     
 
-    # Let's try to split the string on the space
+    # Let's try to split the string on the underscore
     
 
     # Let's get the datatype for the thing we just created.
@@ -49,9 +46,10 @@
     
 
     # For the final item, let's use the length of the list and lowercase the two strings we created to create a sentence
-    
+
 
     # Close the csv file when we're done
     
 
 # Call the function, passing as an argument the name of the csv file to open.
+

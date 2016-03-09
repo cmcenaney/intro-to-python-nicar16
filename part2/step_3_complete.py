@@ -1,4 +1,4 @@
-3# Import modules
+# Import modules
 import csv
 
 # Write a function to do some exploring with strings
