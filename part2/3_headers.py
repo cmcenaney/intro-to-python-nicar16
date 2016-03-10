@@ -1,11 +1,11 @@
 # Import modules
-
+import csv
 
 # Write a function to output the first row of a csv file and get the column names
-
+def output_first_csv_row(file_name):
 
     # Open the csv
-    
+
 
     # Create the object that represents the data in the csv file
     
@@ -38,3 +38,4 @@
     
 
 # Call the function, passing as an argument the name of the csv file to open.
+output_first_csv_row('../data/marijuana_gross_sales.csv')
