@@ -9,11 +9,11 @@
 
 #### Introduction (~20 min)
 - Setup
-	- Download the class files as a "zip" file using the button on the right
-	  at the top of this Github repo page
+	- Download the class files as a ZIP file using the button on the top right
+	  of this Github repo page
 		- We'll extract the zipped files into our "virtual environment" folder
-	- Every step/module we'll be going through has two companion files: 
-		- One has only comments and no Python code, that's what we'll be writing our code together
+	- Every step/module we'll go through has two companion files: 
+		- One has only comments and no Python code, that's what we'll usingn to write our code together
 		- One has all the Python code already filled in. This is for your reference if you get lost
 		  during the class, and you're welcome to refer to it. It's also helpful for taking home.
 
@@ -25,7 +25,9 @@
 - Explain the language's components
 	- integers
 	- strings
+	- working with variables
 	- lists
+	- using for loops
 	- if/else statements
 
 #### Part 2: Functions and Files (~50 min)
