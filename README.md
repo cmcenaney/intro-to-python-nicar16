@@ -7,7 +7,7 @@
 
 ### Schedule for the session
 
-#### Introduction (~20 min)
+#### Introduction
 - Setup
 	- Download the class files as a ZIP file using the button on the top right
 	  of this Github repo page
@@ -21,7 +21,7 @@
 - What is Python?
 - Why learn Python?
 
-#### Part 1: The Basics (~50 min)
+#### Part 1: The Basics
 - Explain the language's components
 	- integers
 	- strings
@@ -30,8 +30,8 @@
 	- using for loops
 	- if/else statements
 
-#### Part 2: Functions and Files (~50 min)
-- I/O operations
+#### Part 2: Functions and Files
+- input operations
 - working with csv files
 - manipulating types
 - looping through rows
@@ -39,3 +39,11 @@
 For this part, we'll start with a CSV and write some basic scripts to see what we're working with. We'll apply what we learned in Part 1 to a real dataset. 
 
 We'll walk through it with you, step by step.
+
+#### Part 3: Analysis
+- dictionaries
+- list comprehensions
+- output operations
+
+We'll show you some ways to analyze the data and output it to a json file.
+
