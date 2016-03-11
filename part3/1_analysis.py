@@ -3,85 +3,63 @@ First, we'll import several standard library modules to use. These are some of t
 in Python. Also, these three double quotes--you can use single quotes too--create a multi-line string. It's great
 For adding a large comment like this one or for setting a variable to a large block of text.
 """
-import os
-import csv
-import json
 
 
-# Use the os module to 
-file_name = "marijuana_gross_sales.csv"
-file_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'data', file_name))
+# Use the os module to select file name
 
 # Open the csv
-csv_file = open(file_path, 'rb')
 
 # Create the object that represents the data in the csv file
-csv_data = csv.reader(csv_file)
 
 # Create a variable to represent the header row
-header_row = csv_data.next()  # explain generators
 
 # transforming data
-data = list(csv_data)
 
-# analyze data
-all_gross_income = [d[3] for d in data]
-# sum(all_gross_income)  # this will fail
-def list_to_dict(alist):
+# get all gross values from list using list comprehension 
+
+# sum(all_gross_sales)  # this will fail
+
+# create a list to dict function using def
 	# alist vs list
-	return dict( zip(header_row, alist) )
 
-list_to_dict = lambda alist: dict( zip(header_row, alist) )
+# create a list to dict function using lambda
 
-data_dict = [list_to_dict(d) for d in data]
+# convert data to a list of dictionaries instead a list of lists (sometimes called two dimensional array/list)
 
-for d in data_dict:
-	d['GROSS_SALES'] = float(d['GROSS_SALES'])
-	d['MONTH'] = d['MONTH'].strip()
+# clean up the data to use types that work for analysis
+	# make all gross sales floats
+	# remove white space from month
 
-all_gross_income = [d['GROSS_SALES'] for d in data_dict]  # reads better!
+# get all gross values from list using list comprehension and new dictionary format
 
-average_gross_income =  sum(all_gross_income) / len(all_gross_income)
+# get the average gross sale values over two years
 
-data_2015 = [d for d in data_dict if d['YEAR'] == '2015']
-all_gross_income_2015 = [d['GROSS_SALES'] for d in data_2015]
-average_gross_income_2015 = sum(all_gross_income_2015) / len(all_gross_income_2015)
+# filter for 2015
 
-# data_2014 = [d for d in data if d[0] == '2014']
-# all_gross_income_2014 = [float(d[3]) for d in data_2014]
-# average_gross_income_2014 = sum(all_gross_income_2014) / len(all_gross_income_2014)
+# filter for 2015 gross sales
 
-# def turn_value_to_float(value):
-# 	return float(value)
+# get the average gross sales for 2015
 
-# lambda value:float(value)
+# get the dictionary based on the largest gross sale
 
-largest_sale = max(data_dict, key=lambda x:float(x['GROSS_SALES']))
-smallest_sale = min(data_dict, key=lambda x:float(x['GROSS_SALES']))
+# get the dictionary based on the smallest gross sale
 
-pct_of_sales = largest_sale['GROSS_SALES'] / sum(all_gross_income_2015) * 100
+# Get the what percent of total sales largest_sale 
 
-sum_of_gross_income = sum(all_gross_income)
+# ge the sum
 
-def robotext(sum_of_gross_income, largest_sale, pct_of_sales):
-	format_numbers = lambda x: "{:,}".format(x)
-	# sum_of_gross_income = "{:,}".format(sum_of_gross_income)
-	sum_of_gross_income = format_numbers(sum_of_gross_income)
-	largest_sale['GROSS_SALES'] = format_numbers(largest_sale['GROSS_SALES'])
-	pct_of_sales = round(pct_of_sales)
+# generate robo text
+	# create lambda function to format numbers
+	# format sum_of_gross_sales
+	# format largest_sale['GROSS_SALES']
+	# round pct to keep it simple
 
-	print """
-	People are smoking the pot in Colorado.
+	# generate robotext
 
-	The state has earned a total ${} since legalizing marijuana in 2014.
-	Sales boomed in {} {} when total sales reached ${}--{} percent of all sales that year.
-	""".format(sum_of_gross_income, largest_sale['MONTH'].capitalize(), largest_sale['YEAR'], largest_sale['GROSS_SALES'], pct_of_sales)
-
-robotext(sum_of_gross_income, largest_sale, pct_of_sales)
+# execute robo text
 
 
-# wriite to different file format
-with open('marijuana_gross_sales.json', 'wb') as outfile:
-	json_data = json.dumps(data_dict, indent=4)
-	outfile.write(json_data)
+# use with to open marijuana_gross_sales.json file
+	# convert list of dictionaries to JSON and add indentation for easy reading
+	# write to file system
 
